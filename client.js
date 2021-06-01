@@ -22,7 +22,7 @@ function create_data(idLength,startDate,endDate){
     for(i=0;i<idLength;i++){
         number+= Math.floor(Math.random()*10)
     }
-
+    
     let start = new Date(startDate)
     let end = new Date(endDate)
     let randomDate= new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
