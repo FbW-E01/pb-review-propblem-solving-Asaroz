@@ -38,10 +38,9 @@ console.time("test");
 const array=[]
 for(y=0;y<10000000;y++){
     array.push(create_data(8,"December 17, 1995 03:24:00","June 28, 2017 07:55:00"))
-    console.log(y)
 }
-console.log(array)
 console.timeEnd("test")
 
-//would love to mesure it but it crashed because it is out of memory at some point. Note that i got 16 gb ram :D 
-//[12760:0000020D13EAC080]   150793 ms: Scavenge (reduce) 4095.1 (4100.3) -> 4094.4 (4101.8) MB, 4.6 / 0.0 ms  (average mu = 0.271, current mu = 0.239) allocation failure
+//test: 16:49.101 (m:ss.mmm)
+// test two without console.log 
+//test: 31.211s
