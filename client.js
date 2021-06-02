@@ -26,10 +26,10 @@ function create_data(idLength,startDate,endDate){
     let start = new Date(startDate)
     let end = new Date(endDate)
     let randomDate= new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()))
-
+    const date_obj = {day:"2-digit",month:"2-digit",year:"numeric",hour:"2-digit",minute:"2-digit",second:"2-digit" }
          const data={
             id:number,
-            time: randomDate.toLocaleString()+" UTC"
+            time: randomDate.toLocaleString('DE', date_obj)+" UTC"
         }
         return data
 }
