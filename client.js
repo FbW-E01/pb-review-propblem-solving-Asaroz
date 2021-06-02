@@ -27,7 +27,7 @@ function create_data(idLength, startDate, endDate) {
         year: "numeric",
         hour: "2-digit",
         minute: "2-digit",
-        second: "2-digit"
+        second: "2-digit",
     }
     const datetimeformat = Intl.DateTimeFormat('DE', date_obj)
     for (y = 0; y < 10000000; y++) {
